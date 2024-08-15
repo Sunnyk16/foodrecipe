@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <div className="">
+      <div className=" bg-gradient-to-tr from-blue-400 to-purple-200 h-screen ">
         
-        <p className="text-center capitalize font-bold text-5xl ">
-        welcome to recipes
+        <p className="text-center capitalize font-bold text-6xl ">
+        welcome <span className="text-white">to </span>recipes
         </p>
         <div className="flex justify-center">
         <Link href={"/recipe-list"}>
