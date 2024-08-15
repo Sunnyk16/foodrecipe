@@ -21,15 +21,16 @@ function Recipelist({ recipelist }) {
           {recipelist && recipelist.length > 0
             ? recipelist.map((recipe) => {
                 return (
-                  <Link href={'/recipe-list/${recipe.id}'}>
+                  <Link href={`/recipe-list/${recipe.id}`}>
                     <Card className="transition-all
-                     hover:scale-90 p-2 " key={recipe.id}>
+                     hover:scale-90 p-2 " >
                         <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
                             <img className="rounded-sm" src={recipe.image}/>
                         </div>
                       <CardHeader>
                         <CardTitle>{recipe.name}</CardTitle>
                       </CardHeader>
+                      {/* <div><h1>{recipe.id}</h1></div> */}
                       
                       <CardContent>
                         <CardDescription>{recipe.instructions}</CardDescription>
